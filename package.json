@@ -1,7 +1,7 @@
 {
   "name": "mercado_liebre",
   "version": "1.0.0",
-  "description": "Mercado liebre del segundo curso",
+  "description": "e-commerce",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",

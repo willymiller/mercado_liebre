@@ -1,48 +1,99 @@
 
 *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     font-family: Roboto;
 }
 
-.header-main{
+.container{
     background-color: #EAC926;
 }
 
-header{
-    background-color: #EAC926;
-}
-
-main{
-    background-color: #EAC926;
+.top-bar-logo{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
 }
 
 .logo{
-    width: 350px;
+    width: 200px;
+    padding: 10px;
+}
+
+.buscador{
+    padding: 12px;
+}
+
+.banner{
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
 }
 
 #titulares{
-    font-size: 24px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .burger-menu{
     margin: auto;
-    font-size: 35px;
-    width: 40px;
+    font-size: 30px;
+    display: block;
+    max-width: 45px;
     background-color: #1259c3;
     color: white;
     text-align: center;
+    border-radius: 5px;
 }
 
-.nav-menu{
-    font-size: 30px;
+.anuncio{
+    margin: auto;
+    padding: 15px;
+    font-size: 10px;
+    text-align: center;
 }
 
-.nav-usuarios{
-    font-size: 30px;
+.nav-seccion{
+    display: none;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+article{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    top: -30px;
 }
 
 .articulo-imagen{
     width: 100%;
     margin: auto;
+}
+
+.articulo-info{
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
 }
 
 #articulo-precio{
@@ -51,16 +102,18 @@ main{
 
 #articulo-descuento{
     font-size: 16px;
+    color: #39b54a;
 }
 
 #articulo-descripcion{
+    display: none;
     font-size: 16px;
 }
 
 footer{
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: #EAC926;
     color: #03264C;
     text-align: center;
 }
@@ -87,4 +140,154 @@ footer{
     margin-top: 30px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.form-createProduct{
+    padding: 20px 15px;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
+
+.form-control label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-options{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.profile-options-text{
+    width: 50px;
+}
+
+.form-button{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* @media only screen and (min-width: 460px) {
+    .container {
+      background-color: lightblue;
+    }
+  } */
+  
+@media only screen and (min-width: 769px) {
+.top-bar{
+        display: flex;
+        flex-direction: row;
+    }
+.top-bar-logo{
+    width: 75%;
+}
+.logo{
+        width: 400px;
+        margin: auto;
+        padding: 5px;
+    }
+.buscador{
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+.anuncio{
+    max-width: 400px;
+    text-align: right;
+    font-size: 14px;
+}
+.nav-seccion{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.nav-seccion ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-seccion ul li{
+    margin: 0px 15px;
+}
+.nav-menu a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0px;
+}
+.nav-usuarios a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0px;
+}
+.burger-menu{
+    display: none;
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+}
+.ofertas{
+    display: flex;
+    flex-direction: row;
+}
+article{
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+#articulo-descripcion{
+    display: block;
+    font-size: 16px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+    header, main, footer{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .productos{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-menu a{
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 5px 0px;
+    }
+    .nav-usuarios a{
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 5px 0px;
+    }
 }
