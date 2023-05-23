@@ -59,10 +59,10 @@
                     </li>
                 </ul>
             </nav>
-            <div>
-                <img class="banner" src="/images/img-home-banner.jpg" alt="">
-            </div>
         </header>
+        <div class="banner-section">
+            <img class="banner" src="/images/img-home-banner.jpg" alt="">
+        </div>
         <main>
             <section>
                 <form action="/createProduct" method="post" class="form-createProduct">
@@ -86,9 +86,9 @@
                         <Label for="description">Descripción:</Label>
                         <textarea name="description" id="description" cols="30" rows="10" class="control"></textarea>
                     </div>
-                    <div class="form-control">
+                    <div class="form-control offer">
                         <Label for="offer">Está en oferta?:</Label>
-                        <input type="radio" name="offer" id="offer">
+                        <span><input type="radio" name="offer" id="offer"></span>
                     </div>
                     <div class="form-control">
                         <button type="reset" class="form-button">Borrar</button>
